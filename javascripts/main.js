@@ -9,3 +9,24 @@ document.getElementById("fancyPetStore").addEventListener("click", (event) => {
 	}
 
 }) 
+
+document.getElementById("all").addEventListener("click", (event) => {
+		let myCats = CatStore.getCats();
+		let myOwners = CatStore.getOwners();
+		CatStore.combineArrays(myCats, myOwners);
+	});
+document.getElementById("none").addEventListener("click", (event) => {
+	CatStore.getCatsByOwner(0)
+});
+document.getElementById("zoe").addEventListener("click", (event) => {
+	CatStore.getCatsByOwner(1)
+});
+document.getElementById("callan").addEventListener("click", (event) => {
+	CatStore.getCatsByOwner(2)
+});
+document.getElementById("lauren").addEventListener("click", (event) => {
+	CatStore.getCatsByOwner(3)
+});
+document.getElementById("ben").addEventListener("click", (event) => {
+	CatStore.getCatsByOwner(4)
+});
