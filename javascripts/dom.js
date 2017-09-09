@@ -8,10 +8,7 @@ var CatStore = ((oldCatStore) => {
 				}
 			});
 		});
-
-
-
-		catStore.domString(cats);
+		CatStore.domString(cats);
 	};
 	oldCatStore.domString = (inputArray) => {
     let catz = '';
