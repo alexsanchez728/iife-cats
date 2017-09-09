@@ -1,1 +1,5 @@
-console.log("dom.js");
+// var CatStore = ((oldCatStore) => {
+
+
+// 	return oldCatStore;
+// })(CatStore || {});
